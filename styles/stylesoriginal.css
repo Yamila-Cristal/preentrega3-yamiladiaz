@@ -1,0 +1,124 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos del header */
+header {
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 100px; 
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+}
+
+/* Estilos del main */
+main {
+    padding: 20px 0;
+}
+
+/* Estilos de las secciones */
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilos del footer */
+footer {
+    padding: 20px 0;
+}
+
+footer img {
+    max-width: 30px; /* iconos */
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header img {
+        max-width: 80px; /* tamaño de tu logo */
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-collapse {
+        padding-top: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+/* grid de servicios*/
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Las imágenes tienen un ancho mínimo de 300px y se ajustan automáticamente */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.grid-text {
+    grid-row: 1;
+    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+}
+
+.grid-img {
+    grid-row: 2;
+    grid-column: span 1; /* Cada imagen ocupa una columna */
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.container section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container section img {
+    max-width: 100%;
+    height: auto;
+}

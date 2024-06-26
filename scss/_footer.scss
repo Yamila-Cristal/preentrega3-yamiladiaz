@@ -1,0 +1,22 @@
+// Footer styles
+footer {
+  padding: 20px 0;
+  background-color: $primary-color;
+  color: #fff;
+
+  img {
+    max-width: $max-width-footer-icon;
+  }
+}
+
+// Footer styles
+footer {
+  padding: 20px 0;
+  background-color: $primary-color;
+  color: #fff;
+
+  img {
+    max-width: $max-width-footer-icon; // Tamaño ajustado
+    @include scale-hover;
+  }
+}

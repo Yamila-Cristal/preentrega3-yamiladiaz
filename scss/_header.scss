@@ -1,0 +1,28 @@
+// Header styles
+header {
+  padding: 20px 0;
+
+  img {
+    max-width: 100px;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+
+      a {
+        padding: 10px 20px;
+      }
+    }
+  }
+
+
+  @include responsive(padding, 20px 0, 10px 0, 10px 0);
+
+  img {
+    @include responsive(max-width, $max-width-logo, 80px, 80px);
+  }
+}
